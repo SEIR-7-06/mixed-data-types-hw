@@ -16,7 +16,7 @@ Array, each index contains a name
 A list of student names from our class, each with a location.
 Array of Objects, each index contains the object that contains a string w/ the location
 A list of student names from our class, each with a location and each with a list of favorite tv shows.
-Array of Objects, each index contains an object with each of the required information
+Object of  array of Objects, each index contains an object with each of the required information
  */
 
 //2. Take it Easy
@@ -135,3 +135,13 @@ for (let i=0 ; i<bondFilms.length; i++)
     }
 }
 console.log(oddBonds)
+//7
+sum = 0
+for (let i = 0; i <bondFilms.length;i++)
+{
+    temp = bondFilms[i].gross.replace("$", '').replace(/,/g, '')
+    sum += parseInt(temp)
+    
+}
+console.log(sum)
+
