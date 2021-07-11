@@ -19,3 +19,17 @@ A list of student names from our class, each with a location and each with a lis
 Array of Objects, each index contains an object with each of the required information
  */
 
+//2. Take it Easy
+/* 1 */
+const arr = ["red", "yellow", "orange", "green", "blue", "purple"]
+/* 2 */
+console.log(arr[4])
+/* 3 */
+const cody = {
+    favoriteFood: "Ice Cream",
+    hobby: "Gaming",
+    currentLocation: "Santa Cruz",
+    favoriteDataType: "Array"
+}
+/* 4 */
+console.log(cody.hobby)
