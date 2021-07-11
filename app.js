@@ -125,3 +125,13 @@ const crazyObject = {
       bondTitles.push(bondFilms[i].title)
   }
 console.log(bondTitles)
+//6
+const oddBonds = []
+for (let i=0 ; i<bondFilms.length; i++)
+{
+    if ( bondFilms[i].year % 2 != 0)
+    {
+        oddBonds.push(bondFilms[i])
+    }
+}
+console.log(oddBonds)
