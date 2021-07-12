@@ -44,3 +44,28 @@ const studentInfo = {
         tvShow: ['SNL', 'Saved by the bell', 'the Office'],
     }, 
 }
+
+//////////////////////////////////////////
+// 2. Take it easy
+
+const rainbow = [
+    'Red',
+    'Orange',
+    'Yellow',
+    'Green',
+    'Blue',
+    'Indigo',
+    'Violet',
+]
+
+console.log(rainbow[4]);
+
+const me = {
+    name: 'Marshawn',
+    favFood: 'Mac & Cheese',
+    hobby: 'Dance',
+    town: 'Natomas',
+    favDataType: 'Array',
+}
+
+console.log(me.hobby);
