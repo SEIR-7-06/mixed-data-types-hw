@@ -143,5 +143,56 @@ for (let i = 0; i <bondFilms.length;i++)
     sum += parseInt(temp)
     
 }
-console.log(sum)
+console.log("Gross total = " + sum)
 
+//8
+const countArr = []
+const newSet = new Set()
+for( let i = 0; i <bondFilms.length; i++) //get number of unique actors
+{
+    newSet.add(bondFilms[i].actor)
+}
+const setArr = Array.from(newSet) //convert newset to array
+for (let i = 0; i <newSet.size; i++) //create an object in the array for each unique actor
+{
+    countArr.push({actor: '', count:0})
+}
+for (let i = 0; i <countArr.length; i++) //set unique actors to array
+{   
+        countArr[i].actor = setArr.pop() 
+}
+for (let i = 0; i < bondFilms.length; i++) // store count per actor to array
+{
+    for (let j=0; j < countArr.length; j++)
+    {
+        if( countArr[j].actor === bondFilms[i].actor)
+        {
+            countArr[j].count++
+        }
+    }
+}
+function getLowestActor (array){ 
+    let min = Number.MAX_VALUE
+    let index = 0
+    for (let i = 0; i <array.length; i++)
+    {
+        if (array[i].count <= min)
+        {
+            index = i
+            min = countArr[i].count
+        }
+    }
+    return array[index].actor
+}
+function logLowestActorObj ( str, obj )
+{   let int = 0
+    for (let i =0; i < obj.length; i++)
+    {
+        if (obj[i].actor === str)
+        {
+            int = i
+        }
+    }
+    return obj[int]
+}
+console.log(logLowestActorObj (getLowestActor(countArr), bondFilms) )
