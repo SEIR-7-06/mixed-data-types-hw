@@ -37,3 +37,14 @@ const student2 = {
 
 
 // QUESTION 2 - TAKE IT EASY
+
+const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+console.log(rainbow[4]);
+
+const erin = {
+    faveFood: 'coffee',
+    hobbies: ['cross-stitch', 'playing with my cats', 'coding with my brother', 'peloton', 'reading', 'playing games'],
+    townName: 'San Bruno',
+    faveDataType: 'boolean',
+}
+console.log(erin.hobbies);
