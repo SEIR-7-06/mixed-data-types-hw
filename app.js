@@ -26,7 +26,7 @@
 //     warpDrive: true,
 //     beamType: "tractor blasters",
 
-// }
+// };
 
 //student names list --> array
 //let studentList = ["John", "Luke", "David","Marcus"];
@@ -38,7 +38,7 @@
 //      location: "Georgia"},
 //     {name:"Lorelei",
 //     location: "Estonia"}
-// ]
+// ];
 
 //student names w/location/tv shows --> an array w/nested objects
 //code snippet:
@@ -61,3 +61,27 @@
 //     }
 // ];
 
+///////Take it Easy
+//q1
+// let rainbowColors = [
+//     "Red", 
+//     "Orange", 
+//     "Yellow", 
+//     "Green", 
+//     "Blue", 
+//     "Indigo", 
+//     "Violet"];
+
+//     //q2
+//     console.log(rainbowColors[4]);
+
+//     //q3
+//     const aboutMe = {
+//         favoriteFood: "rice",
+//         hobby: "writing",
+//         currentTown: "South Bend",
+//         favDataType: "object"
+//     };
+
+//     //q4
+//     console.log(aboutMe.hobby);
