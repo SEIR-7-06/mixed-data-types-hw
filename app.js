@@ -7,24 +7,3 @@
 // * The names and locations would be strings and they would be in an object of the student.
 // * The names, locations, and shows would be strings in an object of the student.  The shows would be in an array in the obect.
 
-// 2. Take it easy
-
-// 1.
-const rainbow = ["red", "orange", "yellow,", "green", "blue", "indigo", "violet"];
-
-// 2. 
-
-console.log(rainbow[4]);
-
-// 3.
-
-const marshall = {
-    favoriteFood: "pizza",
-    hobby: "walking",
-    hometown: "Seattle",
-    favoriteDatatype: "boolean"
-};
-
-// 4.
-
-console.log(marshall.hobby);
