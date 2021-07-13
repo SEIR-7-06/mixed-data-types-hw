@@ -28,3 +28,28 @@ const studentsWLocations = {
     }
 }
 
+//2. Take it Easy
+const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo','violet']
+blueAccess = null
+function getBlue(){
+    for (let i = 0; i < rainbow.length; i++){
+        if (rainbow[i] === 'blue') {
+            blueAccess = rainbow[i]
+        }
+    }
+}
+getBlue()
+console.log(blueAccess)
+
+const gregDanko = {
+    firstName: "Greg",
+    lastName: "Danko",
+    favFood: "kofte",
+    hobby: "writing",
+    ciudad: "San Francisco",
+    favDType: "Objects"
+
+}
+let theHobby = gregDanko.hobby
+console.log(theHobby)
+
