@@ -164,3 +164,9 @@ const bondFilms = [
   }
   console.log(oddBonds)
 
+//7. Bond Film Gross
+let bondFilmGross = 0
+for (let i=0; i<bondFilms.length;i++){
+   bondFilmGross = bondFilmGross + Number(bondFilms[i].gross.replace(/[^0-9.-]+/g,""));
+}
+console.log(bondFilmGross)
