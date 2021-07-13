@@ -1,3 +1,5 @@
+// 1. DATA TYPES
+
 // A light switch that can be either on or off.
 // Boolean
 lightSwitchOn: true 
@@ -64,3 +66,25 @@ const sei706Shows = [
     favoriteTVShows: ['show1', 'show2', 'show3']
     }
 ]
+
+
+//////////////////////////////////////
+// 2. TAKE IT EASY
+const rainbow = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet'
+]
+console.log(rainbow[4])
+
+const megan = {
+    favoriteFood: 'Massaman Curry',
+    hobby: 'reading',
+    location: 'Portland',
+    favoriteDataType: Boolean 
+}
+console.log(megan.hobby)
