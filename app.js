@@ -124,14 +124,26 @@ const inception = {
     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
   ];
 
-  // 5.
+// 5.
 
-  const bondTitles = [
-      "",
-  ]
+const bondTitles = [
+    ""
+];
 
-  for (let i =0; i< bondFilms.length; i++){
-      bondTitles[i] = bondFilms[i].title;
-  }
+for (let i = 0; i < bondFilms.length; i++){
+    bondTitles[i] = bondFilms[i].title;
+}
 
-  console.log(bondTitles);
+console.log(bondTitles);
+
+// 6.
+
+const oddBonds = [];
+
+for (let i = 0; i < bondFilms.length; i++){
+    if (bondFilms[i].year % 2 === 1) {
+        oddBonds.push(bondFilms[i].year);
+    } 
+}
+
+console.log(oddBonds);
