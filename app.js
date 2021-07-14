@@ -155,3 +155,22 @@ for (let i = 0; i < bondFilms.length; i++) {
    bondTitles.push(title);
 }
 console.log(bondTitles);
+
+// Question 6
+
+const oddBonds = [];
+
+// we want to pull out(loop) over Bond films years
+// grab the "year" key value
+// give "year" key value a "holding" variable to store it in
+// and we only want the odd-number years
+// We want to then push there odd number years into oddBonds
+
+for (let i = 0; i < bondFilms.length; i++) {
+  let oddNum = bondFilms[i].year
+  console.log(oddNum);
+  if (oddNum % 2 != 0) {
+    oddBonds.push(oddNum);
+  }
+}
+  console.log(oddBonds);
