@@ -114,3 +114,27 @@ console.log(crazyObject.larry.nicknames[1])
 console.log(crazyObject.larry.characters[1].name)
 
 // 🔴 Commit: "crazyObject"
+
+const inception = {
+    reality: {
+        dreamLayer1: {
+            dreamLayer2: {
+                dreamLayer3: {
+                    dreamLayer4: {
+                        dreamLayer5: {
+                            dreamLayer6: {
+                                limbo: "Joseph Gordon Levitt"
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+//  Change the value of limbo to null.
+inception.limbo = null
+console.log(inception.limbo)
+
+// 🔴 Commit: "object-ception"
