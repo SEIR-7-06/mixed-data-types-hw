@@ -130,7 +130,7 @@ const bondTitles = [
     ""
 ];
 
-for (let i = 0; i < bondFilms.length; i++){
+for (let i = 0; i < bondFilms.length; i++) {
     bondTitles[i] = bondFilms[i].title;
 }
 
@@ -140,10 +140,22 @@ console.log(bondTitles);
 
 const oddBonds = [];
 
-for (let i = 0; i < bondFilms.length; i++){
+for (let i = 0; i < bondFilms.length; i++) {
     if (bondFilms[i].year % 2 === 1) {
         oddBonds.push(bondFilms[i].year);
     } 
 }
 
 console.log(oddBonds);
+
+// 7. 
+
+let totalGross = 0;
+let grossBond = 0;
+for (let i = 0; i < bondFilms.length; i++) {
+    let tempString = bondFilms[i].gross.replace("$","").replace(/./g,"");
+    grossBond = parseInt(bondFilms[i].gross);
+    totalGross = totalGross + grossBond;
+};
+
+console.log(totalGross);
