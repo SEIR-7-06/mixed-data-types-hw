@@ -174,3 +174,15 @@ for (let i = 0; i < bondFilms.length; i++) {
   }
 }
   console.log(oddBonds);
+
+  // Question 7 
+
+  let totalGross = 0;
+  let grossBond = 0;
+
+  for (i = 0; i < bondFilms.length; i++) {
+    let sum = bondFilms[i].gross.replace('$', '').replace(/,/g,'');
+    grossBond = parseInt(sum);
+    totalGross = totalGross + grossBond;
+  }
+  console.log(totalGross);
