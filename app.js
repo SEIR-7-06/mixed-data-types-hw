@@ -179,3 +179,19 @@ for(let i = 0; i < bondFilms.length; i++) {
 console.log(bondTitles)
 
 // 🔴 Commit: "bondTitles array"
+
+// Create a new array oddBonds, of only the Bond films released on odd-numbered years.
+
+oddBonds = []
+
+for(let i = 0; i < bondFilms.length; i++) {
+    if (bondFilms[i].year % 2 != 0) {
+    let year = bondFilms[i].year
+    console.log(year)
+    oddBonds.push(year) //creates new array by pushing all titles into oddBonds
+}}
+
+console.log(oddBonds)
+
+// 🔴 Commit: "oddBonds"
+
