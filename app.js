@@ -42,3 +42,33 @@ const students3 = [
     ]
 
 // 🔴 Commit: "data types"
+
+// Make an array that holds all of the colors of the rainbow.
+
+const rainbows = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue'
+]
+
+// Write code that will access "blue" from the rainbow array.
+
+console.log(rainbows[4])
+
+// Make an object that is called your name and holds the information about your favorite food, a hobby, the name of the town that you live in currently, and your favorite datatype.
+
+const satya = {
+    name: 'Satya',
+    town: 'San Francisco',
+    food: 'Steak',
+    hobby: 'Gaming',
+    favoriteDatatype: 'Objects'
+}
+
+// Write code that will access your hobby from the object that you just created.
+
+console.log(satya.hobby)
+
+// 🔴 Commit: "data structures"
