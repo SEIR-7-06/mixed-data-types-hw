@@ -173,16 +173,16 @@ for (let i=0; i<bondFilms.length; i++){
     console.log(oddBonds)
 
 
-// ///////////QUESTION 7/////////////
-// let grossSum = 0;
-// for (let i=0; i<bondFilms.length; i++){
-//     let amounts = bondFilms[i].gross;
-//     // console.log(amounts)
-//     ///we got dem numbers, not we replace all $
-//     //replace commas
-//     //return sum 
-//    const amounts1 = amounts.replace('$', '').replaceAll(',','');
-// // grossSum.push(parseInt(amounts1))
-// grossSum += (parseInt(amounts1))
-// }
-// console.log(grossSum);
+///////////QUESTION 7/////////////
+let grossSum = 0;
+for (let i=0; i<bondFilms.length; i++){
+    let amounts = bondFilms[i].gross;
+    // console.log(amounts)
+    ///we got dem numbers, not we replace all $
+    //replace commas
+    //return sum 
+   const amounts1 = amounts.replace('$', '').replaceAll(',','');
+// grossSum.push(parseInt(amounts1))
+grossSum += (parseInt(amounts1))
+}
+console.log(grossSum);
