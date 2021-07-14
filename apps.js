@@ -123,15 +123,30 @@ const bondFilms = [
   ];
 
 // QUESTION 5 //
-  const bondTitles = [];
+  // const bondTitles = [];
   // PSUEDOCODE FOR THE PROBLEM //
   // STEP 1: loop over bond films
   // STEP 2: grab the "title" key value pair
   // STEP 2a: make a temporary "holding variable" to store the title
   // STEP 2b: store the .title into the holding variable
   // STEP 3: .push title into bondTitles
+  // for ( let i = 0; i < bondFilms.length; i++) {
+  //   let title = bondFilms[i].title
+  //   bondTitles.push(title)
+  //   console.log(bondTitles)
+  // }
+  
+  // QUESTION 6 //
+  const oddBonds = [];
+  const lameBonds = []
+
   for ( let i = 0; i < bondFilms.length; i++) {
-    let title = bondFilms[i].title
-    bondTitles.push(title)
-    console.log(bondTitles)
+    if (bondFilms[i].year % 2 == 0){
+      let lames = bondFilms[i].year;
+      lameBonds.push(lames)
+  } else {
+    let odds = bondFilms[i].year
+    oddBonds.push(odds)
   }
+}
+console.log(oddBonds) 
