@@ -135,3 +135,9 @@ for(let i=0; i<bondFilms.length; i++){
     }
 }
 console.log(oddBonds)
+
+let bondTotal = 0;
+for(let i=0; i<bondFilms.length; i++){
+    bondFilms[i]['gross'].replace('$', '0')
+}
+console.log(bondFilms[0]['gross'])
