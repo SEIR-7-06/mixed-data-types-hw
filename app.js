@@ -239,3 +239,12 @@ const inception = {
   console.log(oddBonds);
 
   // QUESTION 7 - 'Bond Films Gross'
+  let totalGross = 0;
+  let grossBond = 0;
+
+  for (i=0; i< bondFilms.length; i++) {
+    let tempString = bondFilms[i].gross.replace('$', '').replace(/,/g, '');
+    grossBond = parseInt(tempString);
+    totalGross = totalGross + grossBond;
+  };
+  console.log(totalGross);
