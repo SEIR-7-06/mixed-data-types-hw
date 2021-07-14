@@ -122,7 +122,7 @@ const bondFilms = [
     { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
   ];
 
-// QUESTION 5 //
+  // QUESTION 5 //
   // const bondTitles = [];
   // PSUEDOCODE FOR THE PROBLEM //
   // STEP 1: loop over bond films
@@ -136,17 +136,47 @@ const bondFilms = [
   //   console.log(bondTitles)
   // }
   
-  // QUESTION 6 //
-  const oddBonds = [];
-  const lameBonds = []
+// QUESTION 6 //
+//   const oddBonds = [];
+//   const lameBonds = []
 
-  for ( let i = 0; i < bondFilms.length; i++) {
-    if (bondFilms[i].year % 2 == 0){
-      let lames = bondFilms[i].year;
-      lameBonds.push(lames)
-  } else {
-    let odds = bondFilms[i].year
-    oddBonds.push(odds)
-  }
+//   for ( let i = 0; i < bondFilms.length; i++) {
+//     if (bondFilms[i].year % 2 == 0){
+//       let lames = bondFilms[i].year;
+//       lameBonds.push(lames)
+//   } else {
+//     let odds = bondFilms[i].year
+//     oddBonds.push(odds)
+//   }
+// }
+// console.log(oddBonds) 
+
+// QUESTION 7 //
+
+
+let bondProfit = []
+for ( let i = 0; i < bondFilms.length; i++) {
+  let arrSum = bondFilms[i].gross;
+  let noProf = arrSum.replaceAll("$", "");
+  let noComa = noProf.replaceAll(",", "");
+  let intGross = parseInt(noComa);
+//  bondProfit = bondProfit + intGross;
+// bondProfit += intGross
+
+  bondProfit.push(intGross);
+  
+
+  // bondProfit.push(noComa);
+  // bondProfit.push(bondGross);
+  
+  
+  // console.log(bondProfit)
 }
-console.log(oddBonds) 
+
+let bondGross = (accumulator, currentValue) => {
+  return accumulator + currentValue
+}
+console.log(bondProfit.reduce(bondGross))
+
+
+
