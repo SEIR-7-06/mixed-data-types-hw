@@ -21,3 +21,19 @@
 //  objects in array
 //  let arrayObj = [student1={}, student2={}]
 
+const rainbowColor = ['red','green','blue','purple','yellow','orange']
+// Not quite sure what the exact colors of the rainbow are, pls dont judge me
+let getBlue = ''
+for(let i=0; i<rainbowColor.length; i++){
+    if(rainbowColor[i] === 'blue'){
+        getBlue = rainbowColor[i]
+    }
+}
+console.log(getBlue)
+let dkNam = {
+    favFood: 'South American',
+    hobby: 'HackeySack',
+    town: 'DC',
+    favData: 'Arrays',
+}
+console.log(dkNam.hobby)
