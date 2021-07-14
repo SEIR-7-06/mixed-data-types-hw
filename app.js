@@ -201,9 +201,34 @@ const bondTitles = [];
 // store the title into that holding variable
 // .push() the title into bondTitles
 
-for (let i = 0; i < bondFilms.length; i++) {
-    let title = bondFilms[i].title;
-    //console.log(title);
-    bondTitles.push(title);
+// for (let i = 0; i < bondFilms.length; i++) {
+//     let title = bondFilms[i].title;
+//     //console.log(title);
+//     bondTitles.push(title);
   
+// }
+
+///////////////////
+// 6.
+
+const oddBonds = [];
+for (let i = 0; i < bondFilms.length; i++ ) {
+  if (bondFilms[i].year % 2 !== 0) {
+    oddBonds.push(bondFilms[i].year);
+  }
 }
+
+console.log(oddBonds);
+
+///////////////
+// 7.
+let totalGross = 0;
+let grossBond = 0;
+
+for (i = 0; i < bondFilms.length; i++) {
+  let tempString = bondFilms[i].gross.replace('$','').replace(/,/g,'');
+  grossBond = parseInt(tempString);
+  totalGross = totalGross + grossBond;
+};
+
+console.log(totalGross);
