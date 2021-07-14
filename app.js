@@ -201,12 +201,12 @@ const bondTitles = [];
 // store the title into that holding variable
 // .push() the title into bondTitles
 
-// for (let i = 0; i < bondFilms.length; i++) {
-//     let title = bondFilms[i].title;
-//     //console.log(title);
-//     bondTitles.push(title);
-  
-// }
+for (let i = 0; i < bondFilms.length; i++) {
+    let title = bondFilms[i].title;
+    bondTitles.push(title);
+    
+  }
+  console.log(bondTitles);
 
 ///////////////////
 // 6.
