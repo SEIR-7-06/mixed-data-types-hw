@@ -129,22 +129,38 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
-let bondTitles = [];
+// let bondTitles = [];
 
-for(let i  = 0; i < bondFilms.length; i++){
-  bondTitles.push(bondFilms[i].title);
-}
+// for(let i  = 0; i < bondFilms.length; i++){
+//   bondTitles.push(bondFilms[i].title);
+// }
 
-console.log(bondTitles);
+// console.log(bondTitles);
 
-let oddBonds = [];
-for(let i = 0; i < bondFilms.length; i++){
-  if(bondFilms[i].year % 2 === 1){
-    oddBonds.push(bondFilms[i].year)
-  }
-}
+// let oddBonds = [];
+// for(let i = 0; i < bondFilms.length; i++){
+//   if(bondFilms[i].year % 2 === 1){
+//     oddBonds.push(bondFilms[i].year)
+//   }
+// }
 
-console.log(oddBonds);
+// console.log(oddBonds);
+
+let gross = 0;
+let result = "";
+  for(let i = 0; i < bondFilms.length; i++){
+    let number = (bondFilms[i].gross);
+    number = Number(number.replace(/[\,\$]/g,""));
+    gross += number;
+    result = gross.toLocaleString("us-EN");
+     
+  } 
+
+  console.log("World-wide gross for all James Bond films $"+ result);
+
+  
+  
+
 
 
 
